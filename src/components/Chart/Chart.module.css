@@ -1,0 +1,36 @@
+.layout{
+  background-color: #f8dfff;
+  padding: 1rem;
+  height: 10rem;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrap{
+  display: flex;
+  flex-direction: column;
+  width: 2%;
+}
+
+.container{
+  height: 90%;
+  border-radius: 12px;
+  border: 1px solid #313131;
+  background-color: #c3b4f3;
+  display: flex;
+  flex-direction: column-reverse;
+  overflow: hidden;
+  width: 100%;
+}
+
+.fill{
+  height: 50%;
+  background-color: #4826b9;
+}
+
+.label{
+  font-weight: bold;
+  font-size: 0.5rem;
+  text-align: center;
+}
