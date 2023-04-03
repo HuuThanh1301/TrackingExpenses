@@ -10,9 +10,11 @@ const ExpensesList = (props) => {
       {props.items.map((item) => (
         <ExpenseItem
           key={item.id}
+          id={item.id}
           title={item.title}
           amount={item.amount}
           date={item.date}
+          onRemove={props.onRemove}
         />
       ))}
     </ul>

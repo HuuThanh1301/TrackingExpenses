@@ -36,15 +36,26 @@ const dummy_data = [
   // }
 ];
 
+
+
 function App() {
   const [expenses, setExpenses] = useState(dummy_data);
   const addExpenseHandler = (expense) => {
     setExpenses(prevState => [expense, ...prevState]);
   }
+
+  const removeHandler = (id) => {
+    setExpenses(prevState => {
+      const updatedState = [...prevState].filter(item => item.id !== id);
+      return updatedState;
+    })
+  }
+
+
   return (
     <div>
       <NewExpense onAdd={addExpenseHandler}/>
-      <Expenses items={expenses}/>
+      <Expenses items={expenses} onRemove={removeHandler}/>
     </div>
   );
 }
