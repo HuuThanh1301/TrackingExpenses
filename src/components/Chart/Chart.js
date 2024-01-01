@@ -5,8 +5,6 @@ const ChartBar = (props) => {
   if(props.max > 0){
     barFill = (props.value / props.max) * 100 + '%';
   }
-  console.log('value', props.value);
-  console.log('max', props.max)
 
   return(
     <div className={classes.wrap}>

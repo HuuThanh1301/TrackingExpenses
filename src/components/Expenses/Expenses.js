@@ -18,7 +18,7 @@ const Expenses = (props) => {
     <div className={classes.expenses}>
       <ExpensesFilter onFilter={filterHandler} defautYear={filterYear}/>
       <ExpenseChart items={filterExpenses}/>
-      <ExpensesList items={filterExpenses} onRemove={props.onRemove}/>
+      <ExpensesList items={filterExpenses} onRemove={props.onRemove} onEdit={props.onEdit}/>
     </div>
  
   )

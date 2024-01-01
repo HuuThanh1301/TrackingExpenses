@@ -1,0 +1,35 @@
+.form_controls{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.form_control{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form_control label{
+  font-weight: bold;
+}
+
+.form_control input{
+  border-radius: 6px;
+  width: 20rem;
+  border: none;
+  padding: 0.5rem;
+  font: inherit;
+  border: 1px solid #ccc;
+}
+
+.form_control input:focus{
+  outline: none;
+}
+
+.button_control{
+  display: flex;
+  justify-content: flex-end;
+}
